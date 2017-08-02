@@ -1,0 +1,10 @@
+Names: Filip Tomin, Kevinkumar Patel
+UtorIDs: tominfil, patelke7
+revision number:80
+
+We reached quite a number of problems referencing the correct inode, as is
+the case for ext2_restore where we use a different method to get the target
+inode, (found_node).
+
+We did encounter some problems at the end regarding ln, where hardlink count wasn't going up, after the last
+commmit, it still didn't go up even though the code was implemmented. But the linking did work.
